@@ -1,0 +1,31 @@
+/* 
+Activité : gestion des contacts
+*/
+
+// TODO : complétez le programme
+
+var contacts = [
+    { 
+        nom: "Lévisse",
+        prenom: "Carole",
+    },
+    {
+        nom: "Nelsonne",
+        prenom: "Mélodie",
+    }
+
+];
+
+console.log("Bienvenue dans le gestionnaire des contacts !");
+
+var choix = 0;
+
+do {
+    console.log("1 : Lister les contacts \n0 : Quitter");
+    choix = prompt("Choisissez une option :");
+    if (choix == 1) {
+        for (var i = 0; i < contacts.length; i++) {
+            console.log("Nom : " + contacts[i].nom + ", prénom : " + contacts[i].prenom)
+        }
+    }
+ } while (choix == 1);
